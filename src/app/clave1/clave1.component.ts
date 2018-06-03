@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-clave1',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Clave1Component implements OnInit {
 
-  constructor() { }
+  primerCodigo: string[];
+
+  constructor(private router: Router, private localStorageService: LocalStorageService) { }
 
   ngOnInit() {
+    let espacio = "";
+    let order:any = this.localStorageService.get('order')
+    this.primerCodigo = order.codigoActual.split(espacio)
+      
   }
 
 }

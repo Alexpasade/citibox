@@ -1,8 +1,43 @@
-<form novalidate
+<!-- <form novalidate
 [formGroup]="form"
 (ngSubmit)="onSubmit(form.value)">
 
 <input type="text" formControlName="letra" placeholder="C"> 
+<div *ngIf="letraIncorrecta"><p>¡Upss!☹️ La letra es incorrecta</p>
+<p>Inténtalo de nuevo</p></div>
 <button type="submit" [disabled]="!form.valid">Generar Codigo</button>
 
-</form>
+</form> -->
+
+<div class="container main-container col-xs-12 col-md-12 contenedor">  
+ 
+    <div class="logo">
+      <img src="../../assets/img/citibox-logo.png" alt="">
+    </div>
+  
+      <div class="cuidamos">
+        <p> ¿Qué letra te aparece en la cerradura de tú botón?</p>
+      </div>
+  
+      <div class="numberbuzon align-items-center blocker-img">
+       <img class="blocker" src="/assets/img/locker-citibox-2.svg" alt="">
+        </div>
+     <form novalidate
+     [formGroup]="form"
+     (ngSubmit)="onSubmit(form.value)">
+        <div class="letter-container">
+          <input formControlName="letra" placeholder="LETRA">
+        </div>
+      <div *ngIf="letraIncorrecta" class="principal-info">
+        <p>¡Upss!☹️ La letra es incorrecta</p>
+        <p>Inténtalo de nuevo</p>
+      </div>
+      <div class="col-xs-12 center boton-citi">
+        <button type="submit" [disabled]="!form.valid" class="btn btn-primary btn-block boton">Recoger mi pedido</button>
+      </div>
+      </form>
+  </div>
+
+
+
+

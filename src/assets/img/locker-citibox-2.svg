@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99" height="155" viewBox="0 0 99 155">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#ABA4BA" fill-rule="nonzero" d="M94.493 154.876H4.201a4.2 4.2 0 0 1-4.14-4.9l2.788-16.598a4.2 4.2 0 0 1 4.141-3.5h84.714a4.2 4.2 0 0 1 4.141 3.5l2.79 16.598a4.2 4.2 0 0 1-4.142 4.9z"/>
+        <rect width="91.82" height="127.676" x="3.437" fill="#ABA4BA" fill-rule="nonzero" rx="7.073"/>
+        <path fill="#FBFBFB" fill-rule="nonzero" d="M13.901 15.644h21.51v13.08h-21.51zM38.591 15.644h21.51v13.08h-21.51zM62.742 15.644h21.51v13.08h-21.51zM13.901 35.522h21.51v13.08h-21.51zM38.591 35.522h21.51v13.08h-21.51zM62.742 35.522h21.51v13.08h-21.51zM38.591 53.262h21.51v13.08h-21.51zM62.742 53.262h21.51v13.08h-21.51zM13.901 70.976h21.51v13.08h-21.51zM38.591 70.976h21.51v13.08h-21.51zM62.742 70.976h21.51v13.08h-21.51zM13.901 53.262h21.51v13.08h-21.51z"/>
+        <path fill="#EEEEEF" fill-rule="nonzero" d="M13.901 91.854h70.351v23.832H13.901z" opacity=".64"/>
+        <path fill="#F6F6F6" fill-rule="nonzero" d="M16.762 94.223h17.105v18.983H16.762z"/>
+        <path fill="#FBFBFB" fill-rule="nonzero" d="M36.996 94.223h44.223v18.983H36.996z"/>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="21.623" y="27.351">1</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="44.715" y="27.351">2</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="69.943" y="27.351">3</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="19.912" y="47.45">4</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="45.57" y="47.45">5</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="69.943" y="47.45">6</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="20.768" y="64.899">7</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="45.57" y="64.899">8</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="69.943" y="64.899">9</tspan>
+        </text>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="44.715" y="82.513">0</tspan>
+        </text>
+        <path fill="#50495F" fill-rule="nonzero" d="M78.095 74.844a.354.354 0 1 1-.707 0v-.792h-.849a.692.692 0 0 0-.707.7v1.82h3.818v-1.82a.692.692 0 0 0-.7-.7h-.855v.792z"/>
+        <path fill="#50495F" fill-rule="nonzero" d="M72.06 77.286c-.015 0-.031-.027-.047-.027v-.388a2.758 2.758 0 1 0-5.514 0v2.268a2.758 2.758 0 1 0 5.514 0v-.437c.016 0 .032.031.048.031h7.73a.724.724 0 0 0 0-1.447h-7.73zm-2.8 3.228a1.36 1.36 0 0 1-1.343-1.375v-2.268a1.344 1.344 0 1 1 2.686 0v2.268a1.36 1.36 0 0 1-1.346 1.375h.004z"/>
+        <text fill="#50495F" font-family="QuicksandCitibox-Bold, Quicksand Citibox" font-size="14" font-weight="bold">
+            <tspan x="19.912" y="82.513">X</tspan>
+        </text>
+        <circle cx="24.655" cy="103.715" r="15.782" stroke="#EA4E43" stroke-width="2.1"/>
+    </g>
+</svg>

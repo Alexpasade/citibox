@@ -1,3 +1,4 @@
+import { LetraComponent } from './../letra/letra.component';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -18,8 +19,10 @@ export class BienvenidaComponent implements OnInit {
     this.numBuzon = order.buzon
   }
   
-  handleLetra(){
+  handleStart(){
     this.router.navigate(['letra'])
+
+    
 
   }
 
