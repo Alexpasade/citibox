@@ -1,0 +1,8 @@
+<form novalidate
+[formGroup]="form"
+(ngSubmit)="onSubmit(form.value)">
+
+<input type="text" formControlName="letra" placeholder="C"> 
+<button type="submit" [disabled]="!form.valid">Generar Codigo</button>
+
+</form>
