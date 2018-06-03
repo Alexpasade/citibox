@@ -1,4 +1,22 @@
-<div>{{numBuzon}}</div>
+<div class="container main-container col-xs-12 col-md-12 contenedor">
 
+    <div class="logo">
+        <img src="../../assets/img/citibox-logo.png" alt="">
+    </div>
 
-<button (click)="handleLetra()">Recoger Mi Pedido</button>
+    <div class="cuidamos">
+        <p>Cuidamos tus compras on line hasta que llegues a casa 🏠 </p>
+    </div>
+
+    <div class="numberbuzon align-items-center">
+        <h2>buzón</h2>
+        <h3>{{numBuzon}}</h3>
+    </div>
+
+    <div class="principal-info">
+        <p>Para continuar debes estar en la dirección correcta y delante del buzón indicado</p>
+    </div>
+    <div class="col-xs-12 center boton-citi">
+        <button (click)="handleLetra()" class="btn btn-primary btn-block boton">Recoger mi pedido</button>
+    </div>
+</div>

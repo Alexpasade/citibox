@@ -1,0 +1,59 @@
+.contenedor{
+    text-align: center;
+    
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+ }
+ .cuidamos{
+   width: 325px;
+   margin: 0 auto;
+   padding: 2em;
+   font-family:"CitiFont", serif;
+   font-weight: normal;
+   color: #7942ed;
+   line-height: 1.2;
+ }
+ h2{
+    font-size: 2.2em;
+    font-family: CitiFont;
+    color: #675f76;
+ }
+ h3{
+    font-size: 6em;
+    color: #675f76;
+    font-family: CitiFont;
+ }
+ .principal-info p{
+    font-family: 'Lato', serif;
+    color: #7942ed;
+    font-weight: 500;
+    padding: 2%;
+    line-height: 1.2;
+ }
+ .boton-citi{
+ margin: 1.5em 1em;
+ }
+  .boton {
+    display: inline-block;
+    width: 256px;
+    background-color: #7942ed;
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .boton:hover {
+    background-color: #9a74eb;
+  }
+  .numberbuzon{
+    margin: 40px 0;
+  
+  }
+
+  img{
+   width: 120px;
+   margin: 0 auto;
+   padding: 3%;
+   margin-top: 1em;
+  }

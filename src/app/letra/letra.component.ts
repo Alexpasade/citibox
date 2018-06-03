@@ -13,7 +13,7 @@ export class LetraComponent implements OnInit {
 
   constructor() {
     this.form = new FormGroup({
-      letra: new FormControl('',[Validators.minLength(1), Validators.maxLength(1),Validators.required])
+      letra: new FormControl('',[Validators.minLength(1), Validators.maxLength(1),Validators.required,Validators.pattern(/^[a-zA-Z]+$/)])
     })
    }
 
