@@ -1,4 +1,30 @@
-<input *ngFor="let number of primerCodigo" type="text" placeholder={{number}}>
+<!-- <input *ngFor="let number of primerCodigo" type="text" placeholder={{number}}>
 
-<button (click)="">Ya Tengo mi pedido</button>
-<button>No se abre el buzon</button>
+<button (click)="cierraPedido()">Ya Tengo mi pedido</button>
+<button>No se abre el buzon</button> -->
+
+<div class="container main-container col-xs-12 col-md-12 contenedor">
+
+    <div class="logo">
+      <img src="../../assets/img/citibox-logo.png" alt="">
+    </div>
+  
+    <div class="cuidamos">
+      <p> Introduce este codigo en la cerradura de tu buzón y pulsa la llave 🗝 </p>
+    </div>
+    <div class="row">
+      <div class="inputs">
+  
+        <div class="number">
+          <input *ngFor="let number of primerCodigo" type="text" placeholder={{number}}>
+        </div>
+      </div>
+    </div>
+  
+    <div class="clear-fix"></div>
+  
+    <div class="col-xs-12 center boton-citi">
+      <button (click)="cierraPedido()" class="btn btn-primary btn-block boton">Ya tengo mi pedido </button>
+      <button (click)="handleClick()" class="btn btn-primary btn-block boton white-button">No se abre mi buzón</button>
+    </div>
+  </div>

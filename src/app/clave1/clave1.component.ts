@@ -10,14 +10,19 @@ import { LocalStorageService } from 'angular-2-local-storage';
 export class Clave1Component implements OnInit {
 
   primerCodigo: string[];
+  idOrder:string;
 
   constructor(private router: Router, private localStorageService: LocalStorageService) { }
 
   ngOnInit() {
     let espacio = "";
     let order:any = this.localStorageService.get('order')
-    this.primerCodigo = order.codigoActual.split(espacio)
-      
+    this.primerCodigo = order.codigoActual.split(espacio) 
+    this.idOrder = order.idOrden   
+  }
+
+  cierraPedido(){
+    this.router.navigate([`../nuevaorden/${this.idOrder}/ok`])
   }
 
 }

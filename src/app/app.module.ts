@@ -18,6 +18,7 @@ import { appRoutes} from './app.routing';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { ErrorComponent } from './error/error.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { PedidosuccessComponent } from './pedidosuccess/pedidosuccess.component';
 
 
 
@@ -35,7 +36,8 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
     FinalComponent,
     RegistroComponent,
     ErrorComponent,
-    BienvenidaComponent, 
+    BienvenidaComponent,
+    PedidosuccessComponent, 
 
   ],
   imports: [
