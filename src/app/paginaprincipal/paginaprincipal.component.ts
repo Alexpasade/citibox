@@ -11,17 +11,19 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class PaginaprincipalComponent implements OnInit {
 
   arrayDatos:any;
+  orderId: string;
 
   constructor(private principalservicio: PrincipalService, private localStorageService: LocalStorageService, private router:Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    
     this.activatedRoute.params.subscribe( (params) =>{
-      this.principalservicio.getAllDatos(params.id).then((res)=>{
+      this.principalservicio.getOrder(params.id).then((res)=>{
         this.arrayDatos = res.json()
         if (this.arrayDatos.error) {
-          this.router.navigate(['error'])
+          this.router.navigate([`order/${params.id}/error`])
         }else{
-          this.router.navigate(['bienvenida'])
+          this.router.navigate([`order/${params.id}/bienvenida`])
           this.localStorageService.set('order',this.arrayDatos)
         }
       })

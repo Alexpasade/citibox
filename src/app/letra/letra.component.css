@@ -55,9 +55,7 @@
     font-weight: 700;
     border: 0;
   }
-  .boton:hover {
-    background-color: #9a74eb;
-  }
+  
   ::placeholder{
      text-align: center;
   }

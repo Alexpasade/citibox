@@ -28,12 +28,20 @@
         <div class="letter-container">
           <input formControlName="letra" placeholder="LETRA">
         </div>
-      <div *ngIf="letraIncorrecta" class="principal-info">
-        <p>¡Upss!☹️ La letra es incorrecta</p>
-        <p>Inténtalo de nuevo</p>
+      <div *ngIf="numFallos === 1" class="principal-info">
+        <p>¡Upss!☹️ La letra es incorrecta.<br>
+          Inténtalo de nuevo</p>
       </div>
+      <div *ngIf="numFallos === 2" class="principal-info">
+          <p>Umm...🤔 Esta letra tampoco es la correcta. <br>
+            Te queda 1 intento</p>
+        </div>
+      <div *ngIf="numFallos === 3" class="principal-info">
+          <p>¡Vaya! 🙈 Has agotado las 3 oportunidades. <br>
+            Vuelve a intentarlo en 2 minutos</p>
+          </div>
       <div class="col-xs-12 center boton-citi">
-        <button type="submit" [disabled]="!form.valid" class="btn btn-primary btn-block boton">Recoger mi pedido</button>
+        <button type="submit" [disabled]="!form.valid || disable" class="btn btn-primary btn-block boton">Generar código</button>
       </div>
       </form>
   </div>

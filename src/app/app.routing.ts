@@ -10,12 +10,11 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 export const appRoutes: Routes =[
 
-{path: "nuevaorden/:id", component: PaginaprincipalComponent, children: [
-    {path: 'ok', component: PedidosuccessComponent}
-]},
-{path: "bienvenida", component: BienvenidaComponent},
-{path: "error", component: ErrorComponent},
-{path: "letra", component: LetraComponent},
-{path: "clave1", component: Clave1Component},
+{path: "order/:id", component: PaginaprincipalComponent},
+{path: "order/:id/bienvenida", component: BienvenidaComponent},
+{path: "order/:id/error", component: ErrorComponent},
+{path: "order/:id/letra", component: LetraComponent},
+{path: "order/:id/clave1", component: Clave1Component},
+{path: 'order/:id/ok', component: PedidosuccessComponent},
 {path: "**", component: PaginaprincipalComponent}
 ]

@@ -10,9 +10,9 @@ export class PrincipalService {
   constructor(private http: Http ) { }
 
 
-  getAllDatos(paramId){
+  getOrder(paramId){
 
-    return this.http.get(`http://ea59e04b.ngrok.io/api/nuevaorden/${paramId}`).toPromise()
+    return this.http.get(`http://df91815e.ngrok.io/api/v1/order/${paramId}`).toPromise()
   }
   
 }

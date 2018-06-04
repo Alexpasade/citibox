@@ -11,19 +11,18 @@ import { Router } from '@angular/router';
 export class BienvenidaComponent implements OnInit {
 
   numBuzon: string;
+  orderId: string
 
   constructor(private router: Router, private localStorageService: LocalStorageService)  { }
 
   ngOnInit() {
     let order:any = this.localStorageService.get('order')
     this.numBuzon = order.buzon
+    this.orderId = order.idOrden
   }
   
   handleStart(){
-    this.router.navigate(['letra'])
-
-    
-
+    this.router.navigate([`order/${this.orderId}/letra`]) 
   }
 
 }

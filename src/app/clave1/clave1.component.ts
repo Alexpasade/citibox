@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { ClavesService } from '../claves.service';
 
 @Component({
   selector: 'app-clave1',
@@ -11,18 +12,26 @@ export class Clave1Component implements OnInit {
 
   primerCodigo: string[];
   idOrder:string;
+  status: string;
+  codigo: string;
 
-  constructor(private router: Router, private localStorageService: LocalStorageService) { }
-
+  constructor(private router: Router, private localStorageService: LocalStorageService, private clavesService: ClavesService) { }
+  
+  
   ngOnInit() {
     let espacio = "";
     let order:any = this.localStorageService.get('order')
     this.primerCodigo = order.codigoActual.split(espacio) 
-    this.idOrder = order.idOrden   
+    this.codigo = order.codigoActual
+    this.idOrder = order.idOrden 
+    this.status = order.estado  
   }
 
   cierraPedido(){
-    this.router.navigate([`../nuevaorden/${this.idOrder}/ok`])
+    if (this.status === "activo") {
+      this.status = "cerrado" 
+    }
+    this.clavesService.setTransaccionOk(this.idOrder,this.codigo,this.status)
   }
 
 }
