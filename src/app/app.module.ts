@@ -12,7 +12,6 @@ import { Clave2Component } from './clave2/clave2.component';
 import { ClavemaestraComponent } from './clavemaestra/clavemaestra.component';
 import { IncidenciaComponent } from './incidencia/incidencia.component';
 import { FinalComponent } from './final/final.component';
-import { RegistroComponent } from './registro/registro.component';
 import { HttpModule } from '@angular/http';
 import { appRoutes} from './app.routing';
 import { LocalStorageModule } from 'angular-2-local-storage';
@@ -34,7 +33,6 @@ import { PedidosuccessComponent } from './pedidosuccess/pedidosuccess.component'
     ClavemaestraComponent,
     IncidenciaComponent,
     FinalComponent,
-    RegistroComponent,
     ErrorComponent,
     BienvenidaComponent,
     PedidosuccessComponent, 
