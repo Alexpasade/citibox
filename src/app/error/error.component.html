@@ -17,6 +17,7 @@
     <p class="info-wooops">¡Wooops!</p>
   </div>
   <div class="col-xs-12 center boton-citi">
-      <p class="info-regular">Esta URL pertenece a una transacción antigua. Revisa los mensajes más recientes de tu <br> bandeja de entrada.</p>
+      <p *ngIf="problema === 'anterior'" class="info-regular">Esta URL pertenece a una transacción antigua. Revisa los mensajes más recientes de tu <br> bandeja de entrada.</p>
+      <p *ngIf="problema === 'lectura'" class="info-regular">Hemos tenido un problema recuperando tu pedido</p>
     </div>
 </div>

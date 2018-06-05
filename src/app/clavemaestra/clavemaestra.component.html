@@ -1,3 +1,33 @@
-<p>
-  clavemaestra works!
-</p>
+<div class="container main-container col-xs-12 col-md-12 contenedor">
+
+  <div class="logo">
+    <img src="../../assets/img/citibox-logo.png" alt="">
+  </div>
+
+  <div class="cuidamos">
+    <p> Inténtalo de nuevo con este código de 8 cifras y pulsa la llave �� </p>
+  </div>
+  <div class="row">
+    <div class="inputs-2 first-block">
+
+      <div *ngFor="let number of primerBloque" class="number-master">
+        <input type="text" placeholder={{number}}>
+      </div>  
+    </div>
+    <span class="line"></span>
+
+    <div class="inputs-2 second-block">
+
+      <div *ngFor="let number2 of segundoBloque" class="number-master">
+        <input type="text" placeholder={{number2}}>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear-fix"></div>
+
+  <div class="col-xs-12 center boton-citi">
+    <button (click)="cierraPedido()" class="btn btn-primary btn-block boton">¡Abierto! </button>
+    <button (click)="getIncidencia()" class="btn btn-primary btn-block boton white-button">Nada, no se abre</button>
+  </div>
+</div>

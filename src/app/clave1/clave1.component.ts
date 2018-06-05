@@ -32,6 +32,13 @@ export class Clave1Component implements OnInit {
       this.status = "cerrado" 
     }
     this.clavesService.setTransaccionOk(this.idOrder,this.codigo,this.status)
+
+    this.router.navigate([`order/${this.idOrder}/ok`])
   }
+
+  getClave2(){
+    this.router.navigate([`order/${this.idOrder}/clave2`])
+  }
+
 
 }

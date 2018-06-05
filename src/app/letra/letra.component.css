@@ -54,6 +54,8 @@
     font-size: 20px;
     font-weight: 700;
     border: 0;
+    position: relative;
+    bottom: 0;
   }
   
   ::placeholder{
@@ -70,17 +72,40 @@
   .blocker-img{
    padding-top: 0;
   }
- .letter-container input{
+  .letter-container input{
+    content:'';
     width: 120px;
     height: 60px;
     max-height: 60px; 
     border: solid 1px #ed4e42;
     border-radius: 8px;
-    padding: 4%;
-    line-height: 18px;
+    padding: 0.82em 1em;
+    line-height: 28px;
+    resize:none;
+   
  }
  .blocker-img{
  margin: 1em 0;
  }
- .number-buton{
+ :focus::-webkit-input-placeholder {
+   opacity: 0.2;
+   
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+   text-align: center;
  }
+ input:focus { 
+   text-align: center;
+   font-size:35px;
+   font-family: CitiFont;
+   line-height: 10px;
+   color: #675f76;
+   
+ }
+
+ input:focus::placeholder{
+   color:transparent;
+   backface-visibility: unset;
+ }
+ 

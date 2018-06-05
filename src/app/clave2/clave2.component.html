@@ -1,3 +1,26 @@
-<p>
-  clave2 works!
-</p>
+<div class="container main-container col-xs-12 col-md-12 contenedor">
+
+  <div class="logo">
+    <img src="../../assets/img/citibox-logo.png" alt="">
+  </div>
+
+  <div class="cuidamos">
+    <p>Veámos...
+      <br> Prueba con este código nuevo y acuérdate de pulsar la llave �� </p>
+  </div>
+  <div class="row">
+    <div class="inputs">
+
+      <div *ngFor="let number of segundoCodigo" class="number">
+        <input type="text" placeholder={{number}}>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear-fix"></div>
+
+  <div class="col-xs-12 center boton-citi">
+    <button (click)="cierraPedido()" class="btn btn-primary btn-block boton">¡Buzón abierto! </button>
+    <button (click)="handleClaveMaestra()" class="btn btn-primary btn-block boton white-button">Sigue sin abrirse</button>
+  </div>
+</div>

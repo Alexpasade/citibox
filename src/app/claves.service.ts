@@ -11,7 +11,7 @@ export class ClavesService {
 
 
   setTransaccionOk(idOrden, status, clave){
-    let url = `http://df91815e.ngrok.io/api/v1/order/${idOrden}`
+    let url = `http://bf721362.ngrok.io/api/v1/order/${idOrden}`
     this.http.post(url, {param1: status, param2: clave})
     .subscribe( res =>{
       console.log(res.json()) 

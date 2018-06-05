@@ -82,7 +82,7 @@ img.blocker {
 }
 .white-button {
     background-color: #fff;
-    border: 1px solid #9a74eb;
+    border: solid 3px #7942ed;
     color: #675f76;
 }
 .contains-numbers {
@@ -101,7 +101,7 @@ img.blocker {
 .number input {
     width: 40px;
     height: 40px;
-    background-color: #efefef;
+    background-color: #d8d8d8;
     border-radius: 3px;
     margin: 14px;
     border: 0;

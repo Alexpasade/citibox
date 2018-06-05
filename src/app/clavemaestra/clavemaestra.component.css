@@ -1,0 +1,112 @@
+.contenedor {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+ }
+ img {
+    width: 120px;
+    margin: 0 auto;
+    padding: 3%;
+    margin-top: 1em;
+ }
+ .cuidamos {
+    width: 325px;
+    margin: 0 auto;
+    padding: 2em 3.45em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    font-family: "CitiFont", serif;
+    font-weight: normal;
+    color: #7942ed;
+    line-height: 1.3;
+ }
+ .numberbuzon {
+    margin: 40px 0;
+ }
+ h2 {
+    font-size: 2.2em;
+    font-family: CitiFont;
+    color: #675f76;
+ }
+ h3 {
+    font-size: 6em;
+    color: #675f76;
+    font-family: CitiFont;
+ }
+ .principal-info p {
+    font-family: 'Lato', serif;
+    color: #7942ed;
+    font-weight: 500;
+    padding: 2%;
+    line-height: 1.2;
+    margin-top: 0.7em;
+ }
+ .boton-citi {
+    margin: 1.5em 1em;
+ }
+ .boton {
+    display: inline-block;
+    width: 256px;
+    background-color: #7942ed;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    margin: 2% 0;
+ }
+ ::placeholder {
+    text-align: center;
+ }
+ .white-button {
+    background-color: #fff;
+    border: 1px solid #9a74eb;
+    color: #7942ed;  /*Pasar a Alex*/
+    border: solid 3px #7942ed; /*Pasar a Alex*/
+ }
+ .contains-numbers {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+ }
+ .clear-fix {
+    clear: both;
+ }
+ .number-master {
+    width: 30px;
+    height: 30px;
+    float: left;
+  
+ }
+ .number-master input{
+    width: 30px;
+    height: 30px;
+    background-color: #d8d8d8;
+    border-radius: 3px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 6px;
+ }
+ .inputs-2.first-block{
+    margin-right: 5px;
+ }
+ .inputs-2.second-block{
+    margin-left: 5px;
+ }
+ .line{
+    border-top: 2px solid #675f76;
+    position: relative;
+    top:15px;
+    width: 15px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+ }
+ .inputs-2 {
+    margin: 0 auto;
+    padding: 0;
+ }
+ .row{
+    margin: 7em 0;
+ }

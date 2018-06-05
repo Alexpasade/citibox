@@ -22,6 +22,7 @@ export class PaginaprincipalComponent implements OnInit {
         this.arrayDatos = res.json()
         if (this.arrayDatos.error) {
           this.router.navigate([`order/${params.id}/error`])
+          this.localStorageService.set('error',this.arrayDatos)
         }else{
           this.router.navigate([`order/${params.id}/bienvenida`])
           this.localStorageService.set('order',this.arrayDatos)

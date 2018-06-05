@@ -26,7 +26,11 @@
      [formGroup]="form"
      (ngSubmit)="onSubmit(form.value)">
         <div class="letter-container">
-          <input formControlName="letra" placeholder="LETRA">
+          <input formControlName="letra" placeholder="LETRA" maxlength="1">
+        </div>
+        <div *ngIf="numFallos === 0" class="principal-info">
+          <p>Para continuar debes estar en la<br>
+            dirección correcta y delante del buzón indicado</p>
         </div>
       <div *ngIf="numFallos === 1" class="principal-info">
         <p>¡Upss!☹️ La letra es incorrecta.<br>

@@ -12,7 +12,7 @@ export class PrincipalService {
 
   getOrder(paramId){
 
-    return this.http.get(`http://df91815e.ngrok.io/api/v1/order/${paramId}`).toPromise()
+    return this.http.get(`http://bf721362.ngrok.io/api/v1/order/${paramId}`).toPromise()
   }
   
 }
