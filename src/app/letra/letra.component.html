@@ -25,27 +25,32 @@
      <form novalidate
      [formGroup]="form"
      (ngSubmit)="onSubmit(form.value)">
-        <div class="letter-container">
-          <input formControlName="letra" placeholder="LETRA" maxlength="1">
+        <div *ngIf="numFallos === 0" class="letter-container">
+          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUí" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
+        </div>
+        <div *ngIf="numFallos > 0" class="letter-container2">
+          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUí" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
         </div>
         <div *ngIf="numFallos === 0" class="principal-info">
           <p>Para continuar debes estar en la<br>
             dirección correcta y delante del buzón indicado</p>
         </div>
       <div *ngIf="numFallos === 1" class="principal-info">
-        <p>¡Upss!☹️ La letra es incorrecta.<br>
+        <p class="red">¡Upss!☹️ La letra es incorrecta.<br>
           Inténtalo de nuevo</p>
       </div>
       <div *ngIf="numFallos === 2" class="principal-info">
-          <p>Umm...🤔 Esta letra tampoco es la correcta. <br>
+          <p class="red">Umm...🤔 Esta letra tampoco es la correcta. <br>
             Te queda 1 intento</p>
         </div>
       <div *ngIf="numFallos === 3" class="principal-info">
-          <p>¡Vaya! 🙈 Has agotado las 3 oportunidades. <br>
+          <p class="red">¡Vaya! 🙈 Has agotado las 3 oportunidades. <br>
             Vuelve a intentarlo en 2 minutos</p>
           </div>
       <div class="col-xs-12 center boton-citi">
-        <button type="submit" [disabled]="!form.valid || disable" class="btn btn-primary btn-block boton">Generar código</button>
+        <button type="submit" [disabled]="!form.valid || disable" class="btn btn-primary btn-block boton">
+          {{ (numFallos === 3) ? this.crono.format('mm:ss') : 'Generar Código' }}
+        </button>
       </div>
       </form>
   </div>

@@ -60,6 +60,7 @@
   
   ::placeholder{
      text-align: center;
+     font-size: 12px;
   }
   /* CERRADURA */
   .blocker{
@@ -77,7 +78,7 @@
     width: 120px;
     height: 60px;
     max-height: 60px; 
-    border: solid 1px #ed4e42;
+    border: solid 1px #7942ed;
     border-radius: 8px;
     padding: 0.82em 1em;
     line-height: 28px;
@@ -95,17 +96,34 @@
    justify-content: center;
    text-align: center;
  }
- input:focus { 
+ .focus-letra { 
    text-align: center;
    font-size:35px;
    font-family: CitiFont;
    line-height: 10px;
    color: #675f76;
-   
  }
 
  input:focus::placeholder{
    color:transparent;
    backface-visibility: unset;
  }
+
+ .principal-info p.red{
+   color: #ed4e42;
+ }
+
+ .letter-container2 input{
+  content:'';
+  width: 120px;
+  height: 60px;
+  max-height: 60px; 
+  border: solid 1px #ed4e42;
+  border-radius: 8px;
+  padding: 0.82em 1em;
+  line-height: 28px;
+  resize:none;
+ 
+}
+ 
  

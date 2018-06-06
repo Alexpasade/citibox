@@ -21,6 +21,7 @@ export class Clave1Component implements OnInit {
   ngOnInit() {
     let espacio = "";
     let order:any = this.localStorageService.get('order')
+    console.log(order)
     this.primerCodigo = order.codigoActual.split(espacio) 
     this.codigo = order.codigoActual
     this.idOrder = order.idOrden 

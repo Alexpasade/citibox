@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms'
 import { Router } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
@@ -18,6 +18,9 @@ export class LetraComponent implements OnInit {
   numFallos: number;
   disable: boolean;
   tiempoPenal: number;
+  focusLetra: boolean;
+  crono: any;
+  @ViewChild('letraInput') letraInput: any
 
   intervalPenalizacion: any;
 
@@ -28,6 +31,7 @@ export class LetraComponent implements OnInit {
     this.form = new FormGroup({
       letra: new FormControl('',[Validators.minLength(1), Validators.maxLength(1),Validators.required,Validators.pattern(/^[a-zA-Z]+$/)])
     })
+    this.focusLetra = false
    }
 
   ngOnInit() {
@@ -58,10 +62,11 @@ export class LetraComponent implements OnInit {
   lanzarTimeoutPenalizacion(fecha_penalizacion){
     let fechaPenalizacion = moment(fecha_penalizacion)
     this.disable = true
-
+    let fechaActual = moment(new Date())
+    this.crono = moment(this.tiempoPenal - fechaActual.diff(fechaPenalizacion))
     this.intervalPenalizacion = setInterval(()=> {
       let fechaActual = moment(new Date())
-      console.log(fechaActual.diff(fechaPenalizacion))
+      this.crono = moment(this.tiempoPenal - fechaActual.diff(fechaPenalizacion))
       if(fechaActual.diff(fechaPenalizacion) > this.tiempoPenal){
         this.disable = false
         this.localStorageService.remove('penalizacion')
@@ -69,6 +74,16 @@ export class LetraComponent implements OnInit {
         clearInterval(this.intervalPenalizacion)
       }
     }, 1000)
+  }
+
+  handleFocus(){
+    this.focusLetra = true
+  }
+
+  handleBlur(){
+    if(this.letraInput.nativeElement.value === ''){
+      this.focusLetra = false
+    }
   }
 
 }

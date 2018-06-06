@@ -95,20 +95,23 @@
     clear: both;
  }
  .number {
-    width: 45px;
+    width: 51px;
     height: 45px;
     float: left;
+    margin: 1%;
  }
  .number input {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: #d8d8d8;
     border-radius: 3px;
-    margin: 14px;
     border: 0;
+    color: black;
+    font-size: 40px;
  }
  .inputs {
     margin: 0 auto;
     margin-top: 5em;
     margin-bottom: 5em;
+    width: 222px;
  }

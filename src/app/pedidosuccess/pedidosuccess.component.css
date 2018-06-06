@@ -121,6 +121,7 @@ img.blocker {
     margin: 10px;
     margin-top: 20px;
     border: 0;
+    background-color: transparent;
 }
 .inputs {
     margin: 0 auto;

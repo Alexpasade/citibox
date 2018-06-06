@@ -5,13 +5,13 @@
   </div>
 
   <div class="cuidamos">
-    <p> Inténtalo de nuevo con este código de 8 cifras y pulsa la llave �� </p>
+    <p> Inténtalo de nuevo con este código de 8 cifras y pulsa la llave 🗝 </p>
   </div>
   <div class="row">
     <div class="inputs-2 first-block">
 
       <div *ngFor="let number of primerBloque" class="number-master">
-        <input type="text" placeholder={{number}}>
+        <input disabled type="text" placeholder={{number}}>
       </div>  
     </div>
     <span class="line"></span>
@@ -19,7 +19,7 @@
     <div class="inputs-2 second-block">
 
       <div *ngFor="let number2 of segundoBloque" class="number-master">
-        <input type="text" placeholder={{number2}}>
+        <input disabled type="text" placeholder={{number2}}>
       </div>
     </div>
   </div>
