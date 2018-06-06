@@ -84,6 +84,7 @@ img.blocker {
     background-color: #fff;
     border: solid 3px #7942ed;
     color: #7942ed;
+    margin-top: 3%;
 }
 .contains-numbers {
     display: block;

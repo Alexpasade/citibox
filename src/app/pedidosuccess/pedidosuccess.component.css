@@ -100,9 +100,7 @@ img.blocker {
     background-color: #fff;
     border: 1px solid #9a74eb;
     color: #7942ed;
-    /*Pasar a Alex*/
     border: solid 3px #7942ed;
-    /*Pasar a Alex*/
 }
 .row {
     justify-content: center;
@@ -122,6 +120,7 @@ img.blocker {
     margin-top: 20px;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 .inputs {
     margin: 0 auto;

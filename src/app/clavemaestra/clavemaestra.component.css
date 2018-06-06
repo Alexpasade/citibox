@@ -54,7 +54,7 @@
     font-size: 20px;
     font-weight: 700;
     border: 0;
-    margin: 2% 0;
+    margin: 1% 0;
  }
  ::placeholder {
     text-align: center;
@@ -62,8 +62,9 @@
  .white-button {
     background-color: #fff;
     border: 1px solid #9a74eb;
-    color: #7942ed;  /*Pasar a Alex*/
-    border: solid 3px #7942ed; /*Pasar a Alex*/
+    color: #7942ed;  
+    border: solid 3px #7942ed;
+    margin-top: 2%;
  }
  .contains-numbers {
     display: block;
@@ -110,5 +111,5 @@
     padding: 0;
  }
  .row{
-    margin: 7em 0;
+    margin: 6.15em 0;
  }

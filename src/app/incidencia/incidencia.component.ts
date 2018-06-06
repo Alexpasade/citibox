@@ -10,6 +10,7 @@ export class IncidenciaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

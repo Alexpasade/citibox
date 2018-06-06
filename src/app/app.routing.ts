@@ -1,3 +1,4 @@
+import { FinalComponent } from './final/final.component';
 import { IncidenciaComponent } from './incidencia/incidencia.component';
 import { ClavemaestraComponent } from './clavemaestra/clavemaestra.component';
 import { Clave2Component } from './clave2/clave2.component';
@@ -10,7 +11,7 @@ import {Routes} from '@angular/router';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
-
+//Todas las rutas a los componentes que vamos dependiendo de la url.
 export const appRoutes: Routes =[
 
 {path: "order/:id", component: PaginaprincipalComponent},
@@ -22,5 +23,6 @@ export const appRoutes: Routes =[
 {path: "order/:id/maestra", component: ClavemaestraComponent},
 {path: "order/:id/incidencia", component: IncidenciaComponent},
 {path: 'order/:id/ok', component: PedidosuccessComponent},
+{path: 'order/:id/final',component: FinalComponent},
 {path: "**", component: PaginaprincipalComponent}
 ]

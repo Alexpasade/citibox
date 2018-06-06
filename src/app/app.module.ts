@@ -19,10 +19,6 @@ import { ErrorComponent } from './error/error.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { PedidosuccessComponent } from './pedidosuccess/pedidosuccess.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

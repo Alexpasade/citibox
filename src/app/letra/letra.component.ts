@@ -34,6 +34,7 @@ export class LetraComponent implements OnInit {
     this.focusLetra = false
    }
 
+    // Este metodo nos compara si tenemos penalización guardada en el localstorage para el temporizador en caso de salir de la aplicación.
   ngOnInit() {
     let order:any = this.localStorageService.get('order')
     this.letraBuzon = order.letra
@@ -44,6 +45,7 @@ export class LetraComponent implements OnInit {
       this.numFallos = 3
     }
   }
+  //Estos metodos lanzan la penalización en casa meter la letra incorrecta 3 veces.
 
   onSubmit(pLetra){
     if (this.letraBuzon === pLetra.letra.toUpperCase()) {
@@ -75,6 +77,7 @@ export class LetraComponent implements OnInit {
       }
     }, 1000)
   }
+  //Estos son los metodos para visualizar la letra correctamente.
 
   handleFocus(){
     this.focusLetra = true

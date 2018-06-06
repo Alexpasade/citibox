@@ -1,14 +1,3 @@
-<!-- <form novalidate
-[formGroup]="form"
-(ngSubmit)="onSubmit(form.value)">
-
-<input type="text" formControlName="letra" placeholder="C"> 
-<div *ngIf="letraIncorrecta"><p>¡Upss!☹️ La letra es incorrecta</p>
-<p>Inténtalo de nuevo</p></div>
-<button type="submit" [disabled]="!form.valid">Generar Codigo</button>
-
-</form> -->
-
 <div class="container main-container col-xs-12 col-md-12 contenedor">  
  
     <div class="logo">
@@ -26,10 +15,10 @@
      [formGroup]="form"
      (ngSubmit)="onSubmit(form.value)">
         <div *ngIf="numFallos === 0" class="letter-container">
-          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUí" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
+          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUÍ" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
         </div>
         <div *ngIf="numFallos > 0" class="letter-container2">
-          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUí" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
+          <input #letraInput formControlName="letra" class="place" placeholder="ESCRIBE AQUÍ" maxlength="1" (focus)="handleFocus()" (blur)="handleBlur()" [ngClass]="{'focus-letra': focusLetra}">
         </div>
         <div *ngIf="numFallos === 0" class="principal-info">
           <p>Para continuar debes estar en la<br>

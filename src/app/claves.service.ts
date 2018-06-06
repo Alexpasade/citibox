@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class ClavesService {
 
   constructor(private http: Http) { }
-
+  
 
   setTransaccionOk(idOrden, status, clave){
     let url = `http://friccion.ngrok.io/api/v1/order/${idOrden}`
@@ -18,5 +18,3 @@ export class ClavesService {
     })
   }
 }
-
-//https://friccion.herokuapp.com/api/v1/order/

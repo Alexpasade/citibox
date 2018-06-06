@@ -9,6 +9,7 @@ export class PrincipalService {
 
   constructor(private http: Http ) { }
 
+//Este metodo me recoge la orden en el servidor
 
   getOrder(paramId){
 

@@ -83,8 +83,9 @@
  .white-button {
     background-color: #fff;
     border: 1px solid #9a74eb;
-    color: #7942ed;  /*Pasar a Alex*/
-    border: solid 3px #7942ed; /*Pasar a Alex*/
+    color: #7942ed; 
+    border: solid 3px #7942ed;
+    margin-top: 3%;
  }
  .contains-numbers {
     display: block;

@@ -15,6 +15,8 @@ export class PaginaprincipalComponent implements OnInit {
 
   constructor(private principalservicio: PrincipalService, private localStorageService: LocalStorageService, private router:Router, private activatedRoute: ActivatedRoute) { }
 
+  // Al arrancar la aplicación este método nos comprueba si la orden es una orden nueva o antigua.
+
   ngOnInit() {
     
     this.activatedRoute.params.subscribe( (params) =>{
