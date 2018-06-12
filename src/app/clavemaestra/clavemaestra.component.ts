@@ -40,7 +40,7 @@ export class ClavemaestraComponent implements OnInit {
 
   getIncidencia(){
     this.router.navigate([`order/${this.idOrder}/incidencia`])
-    this.status = "incidencia"
+    this.status = "indicencia"
     this.clavesService.setTransaccionOk(this.idOrder,this.codigo,this.status)
   }
 

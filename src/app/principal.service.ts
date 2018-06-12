@@ -17,3 +17,5 @@ export class PrincipalService {
   }
   
 }
+
+//http://friccion.ngrok.io

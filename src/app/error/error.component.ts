@@ -15,7 +15,6 @@ export class ErrorComponent implements OnInit {
   ngOnInit() {
 
     let error:any = this.localStorageService.get('error')
-    console.log(error.error);
     
     if(error.error === "problema leyendo fichero"){
       this.problema = "lectura"

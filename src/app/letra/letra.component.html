@@ -5,7 +5,7 @@
     </div>
   
       <div class="cuidamos">
-        <p> ¿Qué letra te aparece en la cerradura de tú botón?</p>
+        <p> ¿Qué letra aparece en la cerradura de tú buzón?</p>
       </div>
   
       <div class="numberbuzon align-items-center blocker-img">
@@ -37,7 +37,7 @@
             Vuelve a intentarlo en 2 minutos</p>
           </div>
       <div class="col-xs-12 center boton-citi">
-        <button type="submit" [disabled]="!form.valid || disable" class="btn btn-primary btn-block boton">
+        <button type="submit" [disabled]="!form.valid || disable" class="btn btn-block boton">
           {{ (numFallos === 3) ? this.crono.format('mm:ss') : 'Generar Código' }}
         </button>
       </div>
